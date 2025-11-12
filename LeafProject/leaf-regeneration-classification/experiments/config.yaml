@@ -1,0 +1,25 @@
+hyperparameters:
+  learning_rate: 0.001
+  batch_size: 32
+  num_epochs: 50
+  image_size: [224, 224]
+  augmentation:
+    horizontal_flip: true
+    rotation_range: 15
+    zoom_range: 0.1
+  model:
+    backbone: "resnet50"
+    num_classes: 10
+  loss_function: "cross_entropy"
+  optimizer: "adam"
+
+data:
+  train_data_path: "data/processed/train"
+  val_data_path: "data/processed/val"
+  test_data_path: "data/processed/test"
+  annotations_path: "data/annotations/annotations.json"
+
+output:
+  model_checkpoint_path: "models/checkpoints"
+  logs_path: "logs"
+  results_path: "results"

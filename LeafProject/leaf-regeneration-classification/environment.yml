@@ -1,0 +1,25 @@
+name: leaf-regeneration-classification
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - scikit-learn
+  - scikit-image
+  - tensorflow
+  - keras
+  - opencv
+  - matplotlib
+  - seaborn
+  - jupyter
+  - flask
+  - pyyaml
+  - requests
+  - tqdm
+  - pip
+  - pip:
+      - albumentations
+      - tensorflow-addons
+      - fastapi
+      - uvicorn
